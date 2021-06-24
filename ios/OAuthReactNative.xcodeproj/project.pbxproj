@@ -134,7 +134,6 @@
 				44C0C2F85E72F0607233EDB1 /* Pods-OAuthReactNative-tvOSTests.debug.xcconfig */,
 				3B75E360EC10522F98EA193A /* Pods-OAuthReactNative-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
