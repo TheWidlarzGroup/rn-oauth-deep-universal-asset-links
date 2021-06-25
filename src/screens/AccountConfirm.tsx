@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
 
-const Redirect = () => {
+const AccountConfirm = () => {
   return (
     <View style={styles.container}>
       <Text>Account confirm screen</Text>
@@ -17,4 +17,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Redirect;
+export default AccountConfirm;
