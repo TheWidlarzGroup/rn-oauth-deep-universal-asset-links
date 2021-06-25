@@ -22,6 +22,10 @@ const MainNavigation = () => {
         name={MainNavigationRoutes.REDIRECT}
         component={Redirect}
       />
+      <MainNavigationStack.Screen
+        name={MainNavigationRoutes.ACCOUNT_CONFIRM}
+        component={Redirect}
+      />
     </MainNavigationStack.Navigator>
   );
 };
