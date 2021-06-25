@@ -56,6 +56,7 @@
 		2D41590C4C9B32FA91EA97B2 /* Pods-OAuthReactNative-OAuthReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthReactNative-OAuthReactNativeTests.release.xcconfig"; path = "Target Support Files/Pods-OAuthReactNative-OAuthReactNativeTests/Pods-OAuthReactNative-OAuthReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
 		3B75E360EC10522F98EA193A /* Pods-OAuthReactNative-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthReactNative-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-OAuthReactNative-tvOSTests/Pods-OAuthReactNative-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		44C0C2F85E72F0607233EDB1 /* Pods-OAuthReactNative-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthReactNative-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-OAuthReactNative-tvOSTests/Pods-OAuthReactNative-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5793A77D26850FCA00794591 /* OAuthReactNative.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = OAuthReactNative.entitlements; path = OAuthReactNative/OAuthReactNative.entitlements; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = OAuthReactNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8280EA7644C35696604727C3 /* Pods-OAuthReactNative-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthReactNative-tvOS.release.xcconfig"; path = "Target Support Files/Pods-OAuthReactNative-tvOS/Pods-OAuthReactNative-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		91CCB6B89C21FB0C1ED4F5C1 /* Pods-OAuthReactNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthReactNative.release.xcconfig"; path = "Target Support Files/Pods-OAuthReactNative/Pods-OAuthReactNative.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +141,7 @@
 		13B07FAE1A68108700A75B9A /* OAuthReactNative */ = {
 			isa = PBXGroup;
 			children = (
+				5793A77D26850FCA00794591 /* OAuthReactNative.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -293,7 +295,9 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 23QAX5XY7P;
 						LastSwiftMigration = 1120;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -654,7 +658,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OAuthReactNative/OAuthReactNative.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23QAX5XY7P;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = OAuthReactNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -663,8 +671,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = app.twg.oauth;
 				PRODUCT_NAME = OAuthReactNative;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -677,7 +686,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = OAuthReactNative/OAuthReactNative.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23QAX5XY7P;
 				INFOPLIST_FILE = OAuthReactNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -685,8 +698,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = app.twg.oauth;
 				PRODUCT_NAME = OAuthReactNative;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
