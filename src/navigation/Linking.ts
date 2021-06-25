@@ -1,8 +1,17 @@
 import {LinkingOptions} from '@react-navigation/native';
+import {baseDomain, deepLinkScheme} from '../constants/Domains';
+import {MainNavigationRoutes} from '../types/MainNavigation';
 
 export const linking: LinkingOptions = {
-  prefixes: [],
+  prefixes: [deepLinkScheme, baseDomain],
   config: {
-    screens: {}
+    screens: {
+      [MainNavigationRoutes.REDIRECT]: {
+        path: 'oauth_redirect/:token'
+      },
+      [MainNavigationRoutes.ACCOUNT_CONFIRM]: {
+        path: 'account_confirm/:token'
+      }
+    }
   }
 };
