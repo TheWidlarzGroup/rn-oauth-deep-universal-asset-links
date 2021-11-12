@@ -6,6 +6,10 @@ export enum MainNavigationRoutes {
 
 export type MainNavigationParams = {
   [MainNavigationRoutes.MAIN]: {};
-  [MainNavigationRoutes.REDIRECT]: {};
-  [MainNavigationRoutes.ACCOUNT_CONFIRM]: {};
+  [MainNavigationRoutes.REDIRECT]: {
+    token: string;
+  };
+  [MainNavigationRoutes.ACCOUNT_CONFIRM]: {
+    token: string;
+  };
 };
