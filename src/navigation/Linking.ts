@@ -9,6 +9,9 @@ export const linking: LinkingOptions = {
       [MainNavigationRoutes.REDIRECT]: {
         path: 'oauth_redirect/:token'
       },
+      [MainNavigationRoutes.REDIRECT]: {
+        path: 'oauth_redirect'
+      },
       [MainNavigationRoutes.ACCOUNT_CONFIRM]: {
         path: 'account_confirm/:token'
       }
