@@ -7,12 +7,15 @@ import {
   MainNavigationRoutes
 } from '../types/MainNavigation';
 
-type Route = RouteProp<MainNavigationParams, MainNavigationRoutes.REDIRECT>;
+type Route = RouteProp<
+  MainNavigationParams,
+  MainNavigationRoutes.ACCOUNT_CONFIRM
+>;
 
-const Redirect = () => {
+const AccountConfirm = () => {
   const {
     params: {token}
-  } = useRoute<Route>() || {params: {token: ''}};
+  } = useRoute<Route>() || {token: ''};
 
   useEffect(() => {
     Alert.alert('Token:', token);
@@ -20,7 +23,7 @@ const Redirect = () => {
 
   return (
     <View style={styles.container}>
-      <Text>Redirect screen</Text>
+      <Text>Account confirm screen</Text>
     </View>
   );
 };
@@ -33,4 +36,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Redirect;
+export default AccountConfirm;
