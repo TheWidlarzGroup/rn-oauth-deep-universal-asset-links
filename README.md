@@ -7,6 +7,9 @@ article on `Linking`.
 
 You can read it [here - TWG Blog - Linking Article](https://thewidlarzgroup.com)
 
+![Universal Links - iOS](./assets/universal_link_screens_setup.gif)
+![App Links - Android](./assets/universal_link_screens_setup_android.gif)
+
 ## 👨🏽‍🏫 How to run it
 
 In order to run the app, make sure that your machine is correctly
