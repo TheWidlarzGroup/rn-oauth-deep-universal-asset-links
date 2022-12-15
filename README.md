@@ -5,7 +5,7 @@
 This app is a code-along app that is being an integral part of the
 article on `Linking`.
 
-You can read it [here - TWG Blog - Linking Article](https://thewidlarzgroup.com)
+You can read it [here - TWG Blog - Linking Article](https://thewidlarzgroup.com/deep-universal-asset-links/)
 
 ![Universal Links - iOS](./assets/universal_link_screens_setup.gif)
 ![App Links - Android](./assets/universal_link_screens_setup_android.gif)
